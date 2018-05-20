@@ -12,18 +12,34 @@
 
     <title>Milestone14 | If Trello and Google Calendar had a Baby on your Local Computer</title>
   </head>
-  <body>
+  <body onload="onLoadExecution()">
+
     <header>
       <div class="container-fluid">
         <div class="row heading-row">
+
           <div class="col-lg-6 col-md-6 info-box">
             <div>
               <h5>Milestone14</h5>
               <h6>If Trello and Google Calendar had a Baby on your Local Computer.</h6>
-              <p>Add a task using the form on the right, it's then saved to your local computer.
-                To edit a task, click on the task. To delete a task, click on the task and click the trash icon on the top right corner.</p>
+              <p>Add a task using the form on the right, it's then saved to your local computer. To edit a task, click on the task. To delete a task, click on the task and click the trash icon on the top right corner.</p>
             </div>
+            <select id="chooseMonth" onchange="onChangeExecution()">
+              <option value="0">January</option>
+              <option value="1">February</option>
+              <option value="2">March</option>
+              <option value="3">April</option>
+              <option value="4">May</option>
+              <option value="5">June</option>
+              <option value="6">July</option>
+              <option value="7">August</option>
+              <option value="8">September</option>
+              <option value="9">October</option>
+              <option value="10">November</option>
+              <option value="11">December</option>
+            </select>
           </div>
+
           <div class="col-lg-6 col-md-6 form-box">
             <form id="addTask">
               <div class="form-group">
@@ -49,26 +65,28 @@
               </div>
               <div class="form-group">
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-8">
                     <div class="alert alert-danger" role="alert" id="formAlert">
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-4">
                     <button type="button" class="btn btn-pri" id="submit" onclick="saveTask()">Add Task</button> 
                   </div>
                 </div>
               </div>
             </form>
           </div>
-        </div>
-      </div>
 
-      <div id="main">
-        <div class="row flex-row flex-nowrap">
-          
         </div>
       </div>
     </header>
+
+    <section id="main">
+      <div class="container-fluid">
+        <div class="row flex-row flex-nowrap" id="calendar">
+        </div>
+      </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -7,6 +7,18 @@ body {
 
 header {
     border-bottom: 1px solid rgb(220, 220, 220);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#main {
+    z-index: 999;
+    position: relative;
+    top: 270px;
 }
 
 h5 {
@@ -17,20 +29,19 @@ h5 {
 
 h6 {
     font-size: 14px;
-    line-height: 22px;
     color: rgb(51, 51, 51);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 p {
     font-size: 14px;
-    line-height: 22px;
     color: #777;
+    font-weight: 400;
 }
 
 /* HEADER ELEMENTS ---------------------------------------------------------------------------- */
 .info-box, .form-box {
-    padding: 40px
+    padding: 40px 16px;
 }
 
 .info-box {
@@ -117,8 +128,9 @@ input:focus::placeholder {
     display: none;
 }
 
+/* FORM ELEMENTS ------------------------------------------------------------------------------ */
 
-row > .col-4 {
+row > .col-3 {
     display:flex;
     flex: 0 0 25%;
     max-width: 25%
@@ -129,6 +141,7 @@ row > .col-4 {
     -ms-flex-wrap: nowrap!important;
     flex-wrap: nowrap!important;
 }
+
 .flex-row {
     display:flex;
     -webkit-box-orient: horizontal!important;
