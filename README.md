@@ -9,6 +9,6 @@ I built this as a side project in my spare time, it's certainly not complete but
 ## How to Use it
 Download / clone the repository and open the index.html file in your preferred browser. If you plan on using this as your default task manager, I recommend storing the directory in a place that's easy to navigate to. I do plan on polishing it up considerably over time it could just take a while. If you'd like an upgrade/ more features, submit a pull request!
 
-Below is a Gif showcasing Milestone14:
+Below is a image showcasing Milestone14:
 
-![Imgur](https://imgur.com/a/kBNAI3X)
+[Imgur](https://i.imgur.com/ZSqQ5Zv.png)
