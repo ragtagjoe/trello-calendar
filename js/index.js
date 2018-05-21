@@ -91,7 +91,6 @@ function saveTask() {
     var category = document.getElementById('category');
     var priority = document.getElementById('priority');
     var taskDate = document.getElementById('date');
-    alert(taskDate.value);
 
     // Validate form elements
     var validateResult = validate(task.value, category.value, taskDate.value);
