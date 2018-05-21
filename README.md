@@ -11,4 +11,4 @@ Download / clone the repository and open the index.html file in your preferred b
 
 Below is a Gif showcasing Milestone14:
 
-![Imgur](https://i.imgur.com/KsPBTIb.gifv)
+![Imgur](https://i.imgur.com/KsPBTIb.gif)
