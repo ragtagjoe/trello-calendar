@@ -5,6 +5,6 @@
 Milestone14 is a task manager and calendar organizer. It allows you to create and delete tasks and saves them to a beautiful and simple calendar view. All items are saved to your local storage, there is no external database i.e. You have complete control over your data.
 
 ## How to Use it
-Download / clone the repository and open the index.html file in your preferred browser. If you plan on using this as your default task manager, I recommend storing the directory in a place that's easy to navigate to. Below is a Gif showcasing Milestone14
+Download / clone the repository and open the index.html file in your preferred browser. If you plan on using this as your default task manager, I recommend storing the directory in a place that's easy to navigate to. Below is a Gif showcasing Milestone14:
 
-[Imgur](https://i.imgur.com/MK6j2Or.gifv)
+![Imgur](https://i.imgur.com/MK6j2Or.gif)
