@@ -37,6 +37,8 @@ function displayCalendar(dateToday) {
                 var priority = taskObjects[c].priority;
                 var tDate = taskObjects[c].taskDate;
                 var taskDate = new Date(tDate);
+                var day = taskDate.getDate();
+                taskDate.setDate(day + 1);
 
                 // If date on calendar = date on task, then output it
                 if (dateI.getFullYear() === taskDate.getFullYear()) {
@@ -89,6 +91,7 @@ function saveTask() {
     var category = document.getElementById('category');
     var priority = document.getElementById('priority');
     var taskDate = document.getElementById('date');
+    alert(taskDate.value);
 
     // Validate form elements
     var validateResult = validate(task.value, category.value, taskDate.value);
