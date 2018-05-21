@@ -7,4 +7,4 @@ Milestone14 is a task manager and calendar organizer. It allows you to create an
 ## How to Use it
 Download / clone the repository and open the index.html file in your preferred browser. If you plan on using this as your default task manager, I recommend storing the directory in a place that's easy to navigate to. Below is a Gif showcasing Milestone14
 
-![Gif Showcase of Milestone14](https://i.imgur.com/MK6j2Or.gif)
+[Imgur](https://i.imgur.com/MK6j2Or.gifv)
