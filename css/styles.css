@@ -2,7 +2,7 @@
 body {
     background: #F7F8FA;
     font-size: 14px;
-    font-family: 'Nunito Sans';
+    font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -61,7 +61,6 @@ input, .btn-default, select {
     border: 1px solid rgb(240, 240, 240);
     box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
     border-radius: 4px;
-    margin: 2px;
     background-color: #fff;
     transition: opacity 200ms;
     padding: 8px 12px;
@@ -105,7 +104,7 @@ input:focus::placeholder {
 }
 
 .btn-pri {
-    color: #fff;
+    color: papayawhip;
     background: palevioletred;
     border: none;
     width: 100%;
@@ -128,7 +127,27 @@ input:focus::placeholder {
     display: none;
 }
 
-/* FORM ELEMENTS ------------------------------------------------------------------------------ */
+/* CALENDAR ------------------------------------------------------------------------------ */
+.month-chooser {
+    margin-bottom: 20px;
+    margin-left: -4px;
+    width: 50%;
+    position: fixed;
+}
+
+#chooseMonth {
+    background-color: papayawhip;
+    color: rgb(199, 146, 61);
+}
+
+#chooseMonth:active, #chooseMonth:hover, #chooseMonth:focus {
+    color: palevioletred;
+}
+
+#calendar {
+    position: relative;
+    top: 60px;
+}
 
 row > .col-3 {
     display:flex;
@@ -150,3 +169,89 @@ row > .col-3 {
     -ms-flex-direction: row!important;
     flex-direction: row!important;
 }
+
+.task {
+    background: #fff;
+    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    margin-bottom: 8px;
+}
+
+.btn-round {
+    border: 1px solid rgb(180, 180, 180);
+    color: 1px solid rgb(180, 180, 180);
+    font-size: 12px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    vertical-align: center;
+    text-align: center;
+    display: inline-block;
+    font-weight: 300;
+    margin-right: 10px;
+    margin-top: 5px;
+    transition-duration: 200ms;
+}
+
+.button-actions {
+    justify-content: right;
+    text-align: right;
+    vertical-align: bottom;    
+}
+
+.button-labels {
+    margin-bottom: auto;
+}
+
+label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(180, 180, 180);
+    margin-bottom: auto;
+    align-self: flex-end;
+    padding-top: 11px;
+}
+
+.label-category {
+    margin-right: 10px;
+}
+
+.btn-edit {
+    padding-left: 1px;
+}
+
+.btn-edit:hover {
+    border-color: #4d9dcd;
+    color: #4d9dcd;
+    border-width: 2px;
+}
+
+.btn-complete:hover {
+    border-color: #4DCD7D;
+    color: #4DCD7D;
+    border-width: 2px;
+}
+
+.fa-check {
+    position: relative;
+    top: 2px;
+}
+
+.btn-delete:hover {
+    border-color: #cd4d5d;
+    color: #cd4d5d;
+    border-width: 2px;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    /* For mobile, it's typically better to position checkbox on top of clickable
+       area and turn opacity to 0 instead. */
+ }
+ 

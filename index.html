@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <title>Milestone14 | If Trello and Google Calendar had a Baby on your Local Computer</title>
   </head>
@@ -22,22 +23,13 @@
             <div>
               <h5>Milestone14</h5>
               <h6>If Trello and Google Calendar had a Baby on your Local Computer.</h6>
-              <p>Add a task using the form on the right, it's then saved to your local computer. To edit a task, click on the task. To delete a task, click on the task and click the trash icon on the top right corner.</p>
+              <p>
+                Add a task using the form on the right, it's then saved to your local computer. 
+                To edit a task, click on the task. 
+                To delete a task, click on the task and click the trash icon on the top right corner.
+                To view a different month, select one from the option box below.
+              </p>
             </div>
-            <select id="chooseMonth" onchange="onChangeExecution()">
-              <option value="0">January</option>
-              <option value="1">February</option>
-              <option value="2">March</option>
-              <option value="3">April</option>
-              <option value="4">May</option>
-              <option value="5">June</option>
-              <option value="6">July</option>
-              <option value="7">August</option>
-              <option value="8">September</option>
-              <option value="9">October</option>
-              <option value="10">November</option>
-              <option value="11">December</option>
-            </select>
           </div>
 
           <div class="col-lg-6 col-md-6 form-box">
@@ -83,8 +75,31 @@
 
     <section id="main">
       <div class="container-fluid">
+
+        <div class="month-chooser">
+          <div class="row">
+            <div class="col-4">
+                <select id="chooseMonth" onchange="onChangeExecution()">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                  </select>
+            </div>
+          </div>
+        </div>
+
         <div class="row flex-row flex-nowrap" id="calendar">
         </div>
+        
       </div>
     </section>
 
